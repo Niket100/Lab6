@@ -183,6 +183,7 @@ public class lab6 {
 		int tem=0;
 		for(i=0;i<m;i++)
 		{
+			
 			try
 			{
 			if(!ob[tem%n].p)
@@ -193,6 +194,7 @@ public class lab6 {
 			}
 			else
 			{
+				p.println((i+1)+" "+ob[tem%n].name+" "+ob[tem%n].cor.getx()+" "+ob[tem%n].cor.gety());
 				if(ob[tem%n].iter.empty())
 				{
 					ob[tem%n].p=false;
@@ -298,7 +300,6 @@ class Reader {
         return Double.parseDouble( next() );
     }
 }
-
 
 
 
